@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Archive | Digital Asset Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><i class="fas fa-images"></i> Visual<span>Archive.</span></div>
+        <div class="nav-links">
+            <button id="themeToggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Digital <span>Asset</span> Explorer</h1>
+        <p>A high-performance gallery interface for browsing categorized local media assets.</p>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">All Photos</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+            <button class="filter-btn" data-category="arch">Architecture</button>
+            <button class="filter-btn" data-category="seasons">Seasons</button>
+            <button class="filter-btn" data-category="tech">Technology</button>
+            <button class="filter-btn" data-category="travel">Travel</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="gallery" class="gallery-grid">
+            </div>
+
+        <div class="load-more-wrapper">
+            <button id="loadMoreBtn" class="btn-primary">
+                View More Assets <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+
+        <div id="loader" class="loader" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Visual<span>Archive</span></h3>
+                <p>A specialized image management interface built for speed and reliability using local directory assets.</p>
+            </div>
+            <div class="footer-section">
+                <h4>System Status</h4>
+                <p><i class="fas fa-check-circle" style="color: #10b981;"></i> All 21 Local Assets Loaded</p>
+                <div class="socials">
+                    <a href="https://github.com/hamzazkriya02" target="_blank"><i class="fab fa-github"></i> Source</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Visual Archive | Developed in Bahawalpur</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
